@@ -1,2 +1,1 @@
-# github-copilot-distribution
-GitHub Copilot Distribution
+# GitHub Copilot Distribution
