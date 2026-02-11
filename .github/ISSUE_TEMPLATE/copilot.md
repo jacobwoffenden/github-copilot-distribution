@@ -1,0 +1,61 @@
+---
+name: "GitHub Copilot Access Request"
+description: "Request access to GitHub Copilot Enterprise"
+title: ":copilot: GitHub Copilot Access Request"
+labels: "github-copilot-access-request"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the form below to request access to GitHub Copilot Enterprise. Your request will be reviewed by the GitHub Copilot administrators.
+
+  - type: checkboxes
+    id: civil_servant
+    attributes:
+      label: "Civil Servant"
+      description: "I agree that I am a Civil Servant working for the Ministry of Justice and that I will use GitHub Copilot Enterprise in accordance with the guidelines outlined in the [Ministry of Justice's GitHub Copilot guidance](https://github.com/ministryofjustice/.github/blob/main/docs/github-copilot-guidance.md)."
+      options:
+        - label: "I am a Civil Servant and I agree to the terms."
+          required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: "Full Name"
+      description: "Please enter your full name."
+      placeholder: "John Doe"
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: "Email Address"
+      description: "Please enter your email address."
+      placeholder: "Firstname.Lastname@justice.gov.uk"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: team
+    attributes:
+      label: "Team"
+      description: "Please select your team."
+      options:
+        - "Analysis Directorate"
+        - "Analytical Platform"
+        - "Cloud Optimisation and Accountability"
+        - "Cloud Platform"
+        - "Data & Analytics Engineering"
+        - "Data Architecture"
+        - "Data Science"
+        - "Emergency Containment Platform"
+        - "Engineering Leadership"
+        - "Find MoJ Data"
+        - "Interaction Design"
+        - "Modernisation Platform"
+        - "Performance Hub"
+        - "P&A Cyber"
+    validations:
+      required: true
