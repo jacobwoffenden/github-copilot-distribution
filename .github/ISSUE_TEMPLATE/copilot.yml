@@ -10,8 +10,9 @@ body:
         Please fill out the form below to request access to GitHub Copilot Enterprise. Your request will be reviewed by the GitHub Copilot administrators.
 
   - type: checkboxes
-    id: civil_servant
+    id: code_of_conduct
     attributes:
+      label: "Code of Conduct"
       description: "I agree that I am a Civil Servant working for the Ministry of Justice and that I will use GitHub Copilot Enterprise in accordance with the guidelines outlined in the [Ministry of Justice's GitHub Copilot guidance](https://github.com/ministryofjustice/.github/blob/main/docs/github-copilot-guidance.md)."
       options:
         - label: "I am a Civil Servant and I agree to the terms."
@@ -22,7 +23,6 @@ body:
     attributes:
       label: "Full Name"
       description: "Please enter your full name."
-      placeholder: "John Doe"
     validations:
       required: true
 
@@ -31,15 +31,22 @@ body:
     attributes:
       label: "Email Address"
       description: "Please enter your email address."
-      placeholder: "Firstname.Lastname@justice.gov.uk"
+      placeholder: "e.g. Firstname.Lastname@justice.gov.uk"
     validations:
       required: true
+
+  - type: input
+    id: slack
+    attributes:
+      label: "Slack ID"
+      description: "Please enter your Slack ID. You can get this by clicking on your profile picture, selecting 'Profile', selecting the three vertical dots, and selcting 'Copy member ID'"
+      placeholder: "e.g. U0XXXXXXXXX"
 
   - type: dropdown
     id: team
     attributes:
       label: "Team"
-      description: "Please select your team."
+      description: "Please select your team. If your team is missing, please raise in [#octo-github-copilot](https://moj.enterprise.slack.com/archives/C09PXGRDNNT)"
       options:
         - "Analysis Directorate"
         - "Analytical Platform"
