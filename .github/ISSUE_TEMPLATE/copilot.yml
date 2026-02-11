@@ -12,7 +12,6 @@ body:
   - type: checkboxes
     id: civil_servant
     attributes:
-      label: "Civil Servant"
       description: "I agree that I am a Civil Servant working for the Ministry of Justice and that I will use GitHub Copilot Enterprise in accordance with the guidelines outlined in the [Ministry of Justice's GitHub Copilot guidance](https://github.com/ministryofjustice/.github/blob/main/docs/github-copilot-guidance.md)."
       options:
         - label: "I am a Civil Servant and I agree to the terms."
