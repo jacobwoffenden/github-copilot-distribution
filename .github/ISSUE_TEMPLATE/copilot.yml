@@ -1,5 +1,5 @@
-name: ":copilot: GitHub Copilot Access Request"
-description: "Request access to GitHub Copilot Enterprise"
+name: "GitHub Copilot Access Request"
+description: ":copilot: Request access to GitHub Copilot Enterprise"
 title: ":copilot: GitHub Copilot Access Request"
 labels: "github-copilot-access-request"
 
